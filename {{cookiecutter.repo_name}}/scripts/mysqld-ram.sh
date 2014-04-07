@@ -35,7 +35,7 @@ get_bind_args() {
     # pass "server" for use with mysqld    
     host_option='--host'
     if [ ${1?"get_bind_args() needs one argument"} = "server" ]; then 
-        host_option="--bind"; 
+        host_option="--bind-address"; 
     fi
     
     args=""
